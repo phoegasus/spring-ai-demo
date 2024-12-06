@@ -1,0 +1,1 @@
+Give me a recipe for an entree using {ingredient}.

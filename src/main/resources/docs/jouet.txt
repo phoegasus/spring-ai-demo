@@ -1,0 +1,1 @@
+Un jouet est un produit caractérisé par un nom unique et un type.

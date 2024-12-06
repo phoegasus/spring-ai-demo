@@ -1,0 +1,12 @@
+Chaque type de jouet est associé à des règles spécifiques concernant:
+- La restriction d'âge : définit l'âge minimum recommandé pour utiliser le jouet en toute sécurité.
+- La taxe applicable : détermine le pourcentage de taxe appliqué au prix du jouet.
+
+Un jouet peut appartenir à l'un des types suivants :
+- Peluche
+- Cartes à Collectionner
+- Robot Téléguidé
+
+Chaque type de jouet a une restriction d'âge minimale associée.
+
+Chaque type de jouet est soumis à un pourcentage de taxe spécifique.

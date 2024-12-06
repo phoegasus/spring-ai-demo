@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <title th:text="${recipe.name}">Recipe Page</title>
+</head>
+<body>
+<div class="recipe-container">
+    <h1 class="recipe-title" th:text="${recipe.name}">Recipe Title</h1>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+spring:
+  ai:
+    openai:
+      chat:
+        options:
+          model: gpt-4o-mini
+      image:
+        options:
+          model: dall-e-3
+      api-key: ${OPENAI_API_KEY}
+
+  thymeleaf:
+    prefix: classpath:/cookbook/templates/
+      
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+    jpa:
+      database-platform: org.hibernate.dialect.H2Dialect
+    h2:
+      console:
+        enabled: true
+
+logging:
+  level:
+    org:
+      springframework: DEBUG

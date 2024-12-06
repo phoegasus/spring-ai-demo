@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <title th:text="${recipe.name}">Recipe Page</title>
+</head>
+<body>
+<div class="recipe-container">
+    <h1 class="recipe-title" th:text="${recipe.name}">Recipe Title</h1>
+    <img class="recipe-image" th:src="${recipe.imageLink}" alt="Recipe Image">
+    <div class="recipe-details">
+        <span th:text="'Estimated Cost: $' + ${recipe.estimatedCostInDollars}"></span> |
+        <span th:text="'Cooking Time: ' + ${recipe.cookingTimeInMinutes} + ' minutes'"></span>
+    </div>
+    <h2 class="section-title">Ingredients</h2>
+    <ul>
+        <li th:each="ingredient : ${recipe.ingredients}" th:text="${ingredient}">Ingredient</li>
+    </ul>
+    <h2 class="section-title">Steps</h2>
+    <ul>
+        <li th:each="step : ${recipe.steps}" th:text="${step}">Step</li>
+    </ul>
+</div>
+</body>
+</html>
